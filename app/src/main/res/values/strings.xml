@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">DM2E_BBDD_TattooStudio_OlahEliabe</string>
+    <string name="app_name">Eliabe_TattooStudio_BBDD</string>
+    <string name="bt_create">Create</string>
+    <string name="bt_read">Read</string>
+    <string name="bt_update">Update</string>
+    <string name="bt_delete">Delete</string>
 </resources>

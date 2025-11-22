@@ -65,7 +65,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         );
     """;
 
-        //Orden de ejecución el mismo de la creación
+        //Orden de ejecución, el mismo de la creación
         db.execSQL(SQL_CREATE_CUSTOMER_TABLE);
         db.execSQL(SQL_CREATE_ARTIST_TABLE);
         db.execSQL(SQL_CREATE_APPOINTMENT_TABLE);

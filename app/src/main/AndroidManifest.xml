@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DM2E_BBDD_TattooStudio_OlahEliabe">
         <activity
+            android:name=".ui.DeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ReadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.InsertMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
