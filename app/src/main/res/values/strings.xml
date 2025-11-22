@@ -4,4 +4,12 @@
     <string name="bt_read">Read</string>
     <string name="bt_update">Update</string>
     <string name="bt_delete">Delete</string>
+    <string name="bt_erDiagram">E/R Diagram</string>
+    <string name="bt_saveCustomer">Save customer</string>
+    <string name="et_firstName">First Name</string>
+    <string name="et_lastName">Last Name</string>
+    <string name="et_email">Email</string>
+    <string name="et_phoneNumber">Phone number</string>
+    <string name="et_insertCustomer">Add a new Customer:</string>
+    <string name="et_selectTable">Select Table to modify</string>
 </resources>

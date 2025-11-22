@@ -10,28 +10,21 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DM2E_BBDD_TattooStudio_OlahEliabe">
-        <activity
-            android:name=".ui.DeleteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.UpdateActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.ReadActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.InsertMenuActivity"
-            android:exported="false" />
+        android:theme="@style/Theme.DM2E_BBDD_TattooStudio_OlahEliabe"
+        tools:targetApi="31">
+
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.customer.InsertCustomerActivity" />
+        <activity android:name=".ui.SelectorActivity"/>
+
     </application>
 
 </manifest>

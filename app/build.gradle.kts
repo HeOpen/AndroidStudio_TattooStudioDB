@@ -5,7 +5,7 @@ plugins {
 android {
     namespace = "dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe"
     compileSdk {
-        version = release(21)
+        version = release(36)
     }
 
     defaultConfig {

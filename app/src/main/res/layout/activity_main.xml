@@ -10,25 +10,35 @@
         android:id="@+id/bt_create"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_margin="10sp"
         android:text="@string/bt_create" />
 
     <Button
         android:id="@+id/bt_read"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_margin="10sp"
         android:text="@string/bt_read" />
 
     <Button
         android:id="@+id/bt_update"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_margin="10sp"
         android:text="@string/bt_update" />
 
     <Button
         android:id="@+id/bt_delete"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_margin="10sp"
         android:text="@string/bt_delete" />
+    <Button
+        android:id="@+id/bt_erDiagram"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="@string/bt_erDiagram" />
 
 
 </LinearLayout>
