@@ -110,4 +110,35 @@ public class DAO_Customer {
         // DELETE FROM Customer WHERE customerID_PK = ?
         return db.delete("Customer", "customerID_PK = ?", new String[]{String.valueOf(id)});
     }
+
+    // =========================================================================
+    // READ ALL (SELECT * FROM Customer)
+    // =========================================================================
+    public List<Customer> readAll() {
+
+        List<Customer> allCustomerList = new ArrayList<>();
+
+        Cursor cursor = db.query("Customer", null, null, null, null, null, null);
+
+        // 3. Loop through the cursor results
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                int id = cursor.getInt(cursor.getColumnIndexOrThrow("customerID_PK"));
+                String firstName = cursor.getString(cursor.getColumnIndexOrThrow("firstName"));
+                String lastName = cursor.getString(cursor.getColumnIndexOrThrow("lastName"));
+                String email = cursor.getString(cursor.getColumnIndexOrThrow("email"));
+                String phone = cursor.getString(cursor.getColumnIndexOrThrow("phoneNumber"));
+
+                // B. Create a new Customer object
+                Customer customer = new Customer(id, firstName, lastName, email, phone);
+
+                // C. Add it to the list
+                allCustomerList.add(customer);
+
+            } while (cursor.moveToNext());
+
+            cursor.close();
+        }
+        return allCustomerList;
+    }
 }

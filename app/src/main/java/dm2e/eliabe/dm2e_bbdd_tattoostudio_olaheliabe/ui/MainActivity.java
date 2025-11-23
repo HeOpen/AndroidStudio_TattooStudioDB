@@ -24,12 +24,8 @@ public class MainActivity extends AppCompatActivity {
         btER = this.findViewById(R.id.bt_erDiagram);
 
         btCreate.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, InsertCustomerActivity.class);
-            startActivity(intent);
-        });
-        btCreate.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SelectorActivity.class);
-            intent.putExtra("MODE", "INSERT VALUES");
+            intent.putExtra("MODE", "INSERT");
             startActivity(intent);
         });
         brRead.setOnClickListener(v -> {

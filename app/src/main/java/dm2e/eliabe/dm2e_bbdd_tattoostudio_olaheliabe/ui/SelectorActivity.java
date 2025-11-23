@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.R;
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.customer.InsertCustomerActivity;
+import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.customer.ReadCustomerActivity;
 
 
 public class SelectorActivity extends AppCompatActivity {
@@ -48,7 +49,7 @@ public class SelectorActivity extends AppCompatActivity {
                 intent = new Intent(this, InsertCustomerActivity.class);
                 break;
             case "READ":
-                // intent = new Intent(this, ListCustomerActivity.class);
+                intent = new Intent(this, ReadCustomerActivity.class);
                 break;
             case "UPDATE":
                 // intent = new Intent(this, UpdateCustomerSelectorActivity.class);
