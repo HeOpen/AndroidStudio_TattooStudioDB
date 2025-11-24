@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
+import android.widget.TextView; // Import TextView
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -20,7 +21,9 @@ public class ReadCustomerActivity extends AppCompatActivity {
 
     private EditText editTextSearchID;
     private RecyclerView recyclerView;
+    private TextView tvCustomerInfo; // 1. Declare the new TextView
     private CustomerAdapter adapter;
+
     private List<Customer> allCustomers;
     private DAO_Customer daoCustomer;
 
@@ -33,17 +36,26 @@ public class ReadCustomerActivity extends AppCompatActivity {
         editTextSearchID = findViewById(R.id.editTextSearchID);
         recyclerView = findViewById(R.id.recyclerViewCustomers);
 
+        // 2. Initialize the new TextView
+        tvCustomerInfo = findViewById(R.id.tv_selected_customer_info);
+
         loadInitialData();
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new CustomerAdapter(this, allCustomers);
+
+        // 3. Initialize Adapter with the Click Listener (Lambda)
+        adapter = new CustomerAdapter(this, allCustomers, customer -> {
+            // This code runs when an item is clicked
+            tvCustomerInfo.setText(customer.toString());
+        });
+
         recyclerView.setAdapter(adapter);
 
         setupSearchListener();
     }
 
     private void loadInitialData() {
-        allCustomers = daoCustomer.readAll();
+        allCustomers = daoCustomer.getAllCustomers(); // Corrected method name
         if (allCustomers == null) {
             allCustomers = new ArrayList<>();
             Toast.makeText(this, "No se pudieron cargar los clientes.", Toast.LENGTH_LONG).show();
@@ -64,6 +76,7 @@ public class ReadCustomerActivity extends AppCompatActivity {
             }
         });
     }
+
     private void filterList(String searchText) {
         if (searchText.isEmpty()) {
             adapter.setCustomers(allCustomers);
@@ -72,8 +85,7 @@ public class ReadCustomerActivity extends AppCompatActivity {
 
         try {
             int searchID = Integer.parseInt(searchText);
-
-            Customer customer = daoCustomer.getCustomerById(searchID);
+            Customer customer = daoCustomer.getCustomerById(searchID); // Corrected method name
 
             List<Customer> filteredList = new ArrayList<>();
             if (customer != null) {

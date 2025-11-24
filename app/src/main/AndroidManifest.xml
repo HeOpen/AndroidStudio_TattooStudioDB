@@ -25,6 +25,7 @@
         <activity android:name=".ui.customer.InsertCustomerActivity" />
         <activity android:name=".ui.SelectorActivity"/>
         <activity android:name=".ui.customer.ReadCustomerActivity"/>
+        <activity android:name=".ui.customer.EditCustomerActivity"/>
 
     </application>
 

@@ -9,20 +9,26 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.R; // Asegúrate que tu R es correcto
+import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.R;
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.models.Customer;
 
 public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.CustomerViewHolder> {
 
+    public interface OnItemClickListener {
+        void onItemClick(Customer customer);
+    }
+
     private List<Customer> customerList;
     private final Context context;
 
-    public CustomerAdapter(Context context, List<Customer> customerList) {
+    private final OnItemClickListener listener;
+
+    public CustomerAdapter(Context context, List<Customer> list, OnItemClickListener listener) {
         this.context = context;
-        this.customerList = customerList;
+        this.customerList = list;
+        this.listener = listener;
     }
 
-    // --- ViewHolder: Almacena las referencias de la vista de una fila ---
     public static class CustomerViewHolder extends RecyclerView.ViewHolder {
         final TextView idTextView;
         final TextView nameTextView;
@@ -46,10 +52,14 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.Custom
     @Override
     public void onBindViewHolder(@NonNull CustomerViewHolder holder, int position) {
         Customer customer = customerList.get(position);
+
         holder.idTextView.setText("ID: " + customer.getCustomerID());
         holder.nameTextView.setText(customer.getFirstName());
         holder.phoneTextView.setText(customer.getPhoneNumber());
 
+        holder.itemView.setOnClickListener(v -> {
+            listener.onItemClick(customer);
+        });
     }
 
     @Override

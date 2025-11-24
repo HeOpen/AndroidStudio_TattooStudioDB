@@ -18,7 +18,18 @@
         android:id="@+id/recyclerViewCustomers"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_selected_customer_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Select a customer to see details here"
+        android:textSize="16sp"
+        android:textStyle="italic"/>
 
 </LinearLayout>
