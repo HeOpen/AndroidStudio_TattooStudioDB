@@ -8,6 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.R;
+import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.customer.DeleteCustomerActivity;
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.customer.EditCustomerActivity;
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.customer.InsertCustomerActivity;
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.customer.ReadCustomerActivity;
@@ -51,6 +52,7 @@ public class SelectorActivity extends AppCompatActivity {
                 intent = new Intent(this, EditCustomerActivity.class);
                 break;
             case "DELETE":
+                intent = new Intent(this, DeleteCustomerActivity.class);
                 break;
         }
 
