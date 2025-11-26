@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Tattoo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Search -->
+    <EditText
+        android:id="@+id/et_search_delete_tattoo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by ID"
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_delete_tattoos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        android:background="#F5F5F5"/>
+
+    <!-- Info Container -->
+    <LinearLayout
+        android:id="@+id/ll_selected_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFEBEE"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible"> <!-- Hidden initially -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected for Deletion:"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_delete_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID: -"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_delete_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desc: -"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_delete_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Body: -"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_delete_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: -"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/bt_delete_tattoo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE PERMANENTLY"
+        android:enabled="false"
+        android:padding="20sp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

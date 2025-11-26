@@ -23,15 +23,27 @@
         </activity>
 
         <activity android:name=".ui.SelectorActivity"/>
+        <activity android:name=".ui.DiagramActivity"/>
+
         <activity android:name=".ui.customer.InsertCustomerActivity" />
         <activity android:name=".ui.customer.ReadCustomerActivity"/>
         <activity android:name=".ui.customer.EditCustomerActivity"/>
         <activity android:name=".ui.customer.DeleteCustomerActivity"/>
+
         <activity android:name=".ui.artist.InsertArtistActivity"/>
         <activity android:name=".ui.artist.ReadArtistActivity"/>
         <activity android:name=".ui.artist.EditArtistActivity"/>
         <activity android:name=".ui.artist.DeleteArtistActivity"/>
 
+        <activity android:name=".ui.appointment.InsertAppointmentActivity"/>
+        <activity android:name=".ui.appointment.ReadAppointmentActivity"/>
+        <activity android:name=".ui.appointment.EditAppointmentActivity" />
+        <activity android:name=".ui.appointment.DeleteAppointmentActivity"/>
+
+        <activity android:name=".ui.tattoo.InsertTattooActivity"/>
+        <activity android:name=".ui.tattoo.ReadTattooActivity"/>
+        <activity android:name=".ui.tattoo.EditTattooActivity"/>
+        <activity android:name=".ui.tattoo.DeleteTattooActivity"/>
     </application>
 
 </manifest>

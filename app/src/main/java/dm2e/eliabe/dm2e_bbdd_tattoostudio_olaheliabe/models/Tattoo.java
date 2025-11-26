@@ -46,6 +46,10 @@ public class Tattoo {
 
     @Override
     public String toString() {
-        return description + " (" + bodyPart + ")";
+        return "ID: " + tattooID_PK + "\n" +
+                "Desc: " + description + "\n" +
+                "Body Part: " + bodyPart + "\n" +
+                "Price: $" + price + "\n" +
+                "Appt ID: " + appointmentID_FK;
     }
 }

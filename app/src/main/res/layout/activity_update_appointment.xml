@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Appointment"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Date/Time Input -->
+    <EditText
+        android:id="@+id/et_edit_appointment_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date &amp; Time (e.g. 2023-11-01 10:00)"
+        android:inputType="datetime"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 1. STATUS SPINNER -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+    <Spinner
+        android:id="@+id/sp_edit_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 2. CUSTOMER SPINNER -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+    <Spinner
+        android:id="@+id/sp_edit_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 3. ARTIST SPINNER -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Artist:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+    <Spinner
+        android:id="@+id/sp_edit_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- UPDATE BUTTON -->
+    <Button
+        android:id="@+id/bt_update_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Appointment"
+        android:backgroundTint="@color/design_default_color_primary"/>
+
+</LinearLayout>

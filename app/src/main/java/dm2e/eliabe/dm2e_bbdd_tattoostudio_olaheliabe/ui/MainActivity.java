@@ -29,26 +29,23 @@ public class MainActivity extends AppCompatActivity {
         });
         brRead.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SelectorActivity.class);
-            intent.putExtra("MODE", "READ"); 
+            intent.putExtra("MODE", "READ");
             startActivity(intent);
         });
         btUpdate.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SelectorActivity.class);
-            intent.putExtra("MODE", "UPDATE"); 
+            intent.putExtra("MODE", "UPDATE");
             startActivity(intent);
         });
         btDelete.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SelectorActivity.class);
-            intent.putExtra("MODE", "DELETE"); 
+            intent.putExtra("MODE", "DELETE");
             startActivity(intent);
         });
-        /*
         btER.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, );
-
+            Intent intent = new Intent(MainActivity.this, DiagramActivity.class);
             startActivity(intent);
         });
-         */
 
     }
 }

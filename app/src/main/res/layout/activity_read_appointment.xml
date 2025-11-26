@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextSearchID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search a Customer's ID"
+        android:inputType="number"
+        android:textColor="@color/read"
+        android:padding="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCustomers"
+        android:layout_width="match_parent"
+        android:layout_height="488dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_selected_customer_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0"
+        android:padding="16dp"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="80sp"
+        android:text="Select a customer to see details here"
+        android:textSize="20sp"
+        android:backgroundTint="@color/read"
+        android:textColor="@color/white"
+        android:textStyle="italic"/>
+
+</LinearLayout>

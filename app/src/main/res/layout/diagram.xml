@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Database E/R"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/diagram"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- THE DIAGRAM IMAGE -->
+        <!-- Make sure your image file is named 'diagram_tattoo_studio' in res/drawable -->
+        <ImageView
+            android:id="@+id/iv_diagram"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/diagram_tattoo_studio"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="ER Diagram"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Database Structure Explained"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- THE EXPLANATION TEXT -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:text="This database manages a Tattoo Studio workflow using 4 main tables:\n\n
+1. CUSTOMER TABLE:\nStores client information including Name, Email, and Phone. This is the starting point for any appointment.\n\n
+2. ARTIST TABLE:\nStores the tattoo artists' details. Each appointment is assigned to a specific artist.\n\n
+3. APPOINTMENT TABLE:\nThe core entity that links a Customer to an Artist. It includes the Date/Time and Status (Pending, Confirmed, Completed). This table uses Foreign Keys to link to Customers and Artists.\n\n
+4. TATTOO TABLE:\nContains the specifics of the artwork (Body Part, Price, Description). It has a 1:1 relationship with the Appointment table, meaning every tattoo belongs to one specific appointment."/>
+
+    </LinearLayout>
+</ScrollView>
