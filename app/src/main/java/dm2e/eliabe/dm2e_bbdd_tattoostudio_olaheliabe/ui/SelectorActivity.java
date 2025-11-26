@@ -103,7 +103,6 @@ public class SelectorActivity extends AppCompatActivity {
             Toast.makeText(this, "Feature under construction", Toast.LENGTH_SHORT).show();
         }
     }
-    //todo FIX ME
     private void navigateToAppointment() {
         Intent intent = null;
 
@@ -115,7 +114,7 @@ public class SelectorActivity extends AppCompatActivity {
                 intent = new Intent(this, ReadAppointmentActivity.class);
                 break;
             case "UPDATE":
-                intent = new Intent(this, EditAppointmentActivity.class); //todo FIX ME
+                intent = new Intent(this, EditAppointmentActivity.class); //Blehhhhhhhh
                 break;
             case "DELETE":
                 intent = new Intent(this, DeleteAppointmentActivity.class);

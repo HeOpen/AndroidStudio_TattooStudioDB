@@ -19,7 +19,7 @@
         android:id="@+id/et_edit_appointment_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Date &amp; Time (e.g. 2023-11-01 10:00)"
+        android:hint="DateTime (YYYY/MM/mm 10:00)"
         android:inputType="datetime"
         android:layout_marginBottom="16dp"/>
 

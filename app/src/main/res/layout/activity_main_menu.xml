@@ -1,63 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_mainTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="G59\nTattoo Studio"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textSize="50sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/foto_menu"
+        android:contentDescription="Background Image" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" />
 
-    <Button
-        android:id="@+id/bt_create"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10sp"
-        android:backgroundTint="@color/create"
-        android:textSize="25sp"
-        android:text="@string/bt_create" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
 
-    <Button
-        android:id="@+id/bt_read"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10sp"
-        android:backgroundTint="@color/read"
-        android:textSize="25sp"
-        android:text="@string/bt_read" />
+        <TextView
+            android:id="@+id/tv_mainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G59\nTattoo Studio"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="48dp"/>
 
-    <Button
-        android:id="@+id/bt_update"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10sp"
-        android:backgroundTint="@color/update"
-        android:textSize="25sp"
-        android:text="@string/bt_update" />
+        <Button
+            android:id="@+id/bt_create"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/create"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:text="@string/bt_create" />
 
-    <Button
-        android:id="@+id/bt_delete"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10sp"
-        android:backgroundTint="@color/delete"
-        android:textSize="25sp"
-        android:text="@string/bt_delete" />
-    <Button
-        android:id="@+id/bt_erDiagram"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10sp"
-        android:textSize="25sp"
-        android:backgroundTint="@color/diagram"
-        android:text="@string/bt_erDiagram" />
+        <Button
+            android:id="@+id/bt_read"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/read"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:text="@string/bt_read" />
 
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/update"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:text="@string/bt_update" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/delete"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:text="@string/bt_delete" />
+
+        <Button
+            android:id="@+id/bt_erDiagram"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:backgroundTint="@color/diagram"
+            android:text="@string/bt_erDiagram" />
+
+    </LinearLayout>
+
+</FrameLayout>
