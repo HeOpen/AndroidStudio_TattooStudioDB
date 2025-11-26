@@ -10,7 +10,7 @@
         android:id="@+id/editTextSearchID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search a Customer's ID"
+        android:hint="Search a Artist's ID"
         android:inputType="number"
         android:textColor="@color/read"
         android:padding="12dp" />

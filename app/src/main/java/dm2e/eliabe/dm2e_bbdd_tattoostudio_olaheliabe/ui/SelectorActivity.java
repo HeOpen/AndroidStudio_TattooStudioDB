@@ -8,6 +8,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.R;
+import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.artist.DeleteArtistActivity;
+import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.artist.EditArtistActivity;
+import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.artist.InsertArtistActivity;
+import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.artist.ReadArtistActivity;
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.customer.DeleteCustomerActivity;
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.customer.EditCustomerActivity;
 import dm2e.eliabe.dm2e_bbdd_tattoostudio_olaheliabe.ui.customer.InsertCustomerActivity;
@@ -36,6 +40,7 @@ public class SelectorActivity extends AppCompatActivity {
         btTattoo = findViewById(R.id.bt_sel_tattoo);
 
         btCustomer.setOnClickListener(v -> navigateToCustomer());
+        btArtist.setOnClickListener(v -> navigateToArtist());
     }
 
     private void navigateToCustomer() {
@@ -53,6 +58,30 @@ public class SelectorActivity extends AppCompatActivity {
                 break;
             case "DELETE":
                 intent = new Intent(this, DeleteCustomerActivity.class);
+                break;
+        }
+
+        if (intent != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "Feature under construction", Toast.LENGTH_SHORT).show();
+        }
+    }
+    private void navigateToArtist() {
+        Intent intent = null;
+
+        switch (currentMode) {
+            case "INSERT":
+                intent = new Intent(this, InsertArtistActivity.class);
+                break;
+            case "READ":
+                intent = new Intent(this, ReadArtistActivity.class);
+                break;
+            case "UPDATE":
+                intent = new Intent(this, EditArtistActivity.class);
+                break;
+            case "DELETE":
+                intent = new Intent(this, DeleteArtistActivity.class);
                 break;
         }
 

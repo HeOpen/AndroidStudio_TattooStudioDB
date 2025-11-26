@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete Customer"
+        android:text="Delete Artist"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="#D32F2F"
@@ -26,7 +26,7 @@
         android:layout_marginBottom="8dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_delete_customers"
+        android:id="@+id/rv_delete_Artists"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -35,7 +35,7 @@
 
     <!-- INFO CONTAINER (Initially Hidden in Java) -->
     <LinearLayout
-        android:id="@+id/ll_selected_info_container"
+        android:id="@+id/artist_ll_selected_info_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -52,28 +52,28 @@
             android:layout_marginBottom="8dp"/>
 
         <TextView
-            android:id="@+id/tv_delete_id"
+            android:id="@+id/artist_tv_delete_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ID: -"
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/tv_delete_name"
+            android:id="@+id/artist_tv_delete_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name: -"
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/tv_delete_email"
+            android:id="@+id/artist_tv_delete_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Email: -"
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/tv_delete_phone"
+            android:id="@+id/artist_tv_delete_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Phone: -"
@@ -81,7 +81,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/bt_delete_customer"
+        android:id="@+id/artist_bt_delete_Artist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DELETE PERMANENTLY"

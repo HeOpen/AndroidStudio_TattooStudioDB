@@ -6,7 +6,6 @@
     android:padding="24dp"
     android:gravity="center_horizontal">
 
-    <!--Titulo-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +14,6 @@
         android:textStyle="bold"
         android:layout_marginBottom="24dp"/>
 
-    <!--Comienzo del formulario-->
     <EditText
         android:id="@+id/et_firstName"
         android:layout_width="match_parent"
@@ -47,12 +45,11 @@
         android:hint="@string/et_phoneNumber"
         android:inputType="phone"
         android:layout_marginBottom="32dp"/>
-    <!--Enviar-->
     <Button
         android:id="@+id/bt_save_customer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/bt_saveCustomer"
-        android:backgroundTint="@color/design_default_color_primary"/>
+        android:backgroundTint="@color/create"/>
 
 </LinearLayout>

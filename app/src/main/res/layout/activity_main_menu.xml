@@ -5,12 +5,23 @@
     android:orientation="vertical"
     android:gravity="center">
 
+    <TextView
+        android:id="@+id/tv_mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G59\nTattoo Studio"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="50sp" />
+
 
     <Button
         android:id="@+id/bt_create"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
+        android:backgroundTint="@color/create"
+        android:textSize="25sp"
         android:text="@string/bt_create" />
 
     <Button
@@ -18,6 +29,8 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
+        android:backgroundTint="@color/read"
+        android:textSize="25sp"
         android:text="@string/bt_read" />
 
     <Button
@@ -25,6 +38,8 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
+        android:backgroundTint="@color/update"
+        android:textSize="25sp"
         android:text="@string/bt_update" />
 
     <Button
@@ -32,12 +47,16 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
+        android:backgroundTint="@color/delete"
+        android:textSize="25sp"
         android:text="@string/bt_delete" />
     <Button
         android:id="@+id/bt_erDiagram"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
+        android:textSize="25sp"
+        android:backgroundTint="@color/diagram"
         android:text="@string/bt_erDiagram" />
 
 

@@ -2,5 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="dangerousRed">#971e00FF</color>
+    <color name="dangerousRed">#971e00</color>
+    <color name="create">#A3D78A</color>
+    <color name="read">#4A70A9</color>
+    <color name="update">#FCB53B</color>
+    <color name="delete">#A72703</color>
+    <color name="diagram">#48205E</color>
+    <color name="customer">#09122C</color>
+    <color name="artist">#872341</color>
+    <color name="appointment">#BE3144</color>
+    <color name="tattoo">#E17564</color>
 </resources>

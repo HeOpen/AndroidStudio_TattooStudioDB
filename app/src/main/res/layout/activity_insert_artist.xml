@@ -9,57 +9,47 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit Customer"
+        android:text="Add a new Artist"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/update"
         android:layout_marginBottom="24dp"/>
 
     <EditText
-        android:id="@+id/et_firstName"
+        android:id="@+id/artist_et_firstName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="First Name"
+        android:hint="@string/et_firstName"
         android:inputType="textPersonName"
         android:layout_marginBottom="16dp"/>
 
     <EditText
-        android:id="@+id/et_lastName"
+        android:id="@+id/artist_et_lastName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Last Name"
+        android:hint="@string/et_lastName"
         android:inputType="textPersonName"
         android:layout_marginBottom="16dp"/>
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/artist_et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email Address"
+        android:hint="@string/et_email"
         android:inputType="textEmailAddress"
         android:layout_marginBottom="16dp"/>
 
     <EditText
-        android:id="@+id/et_phone"
+        android:id="@+id/artist_et_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Phone Number"
+        android:hint="@string/et_phoneNumber"
         android:inputType="phone"
         android:layout_marginBottom="32dp"/>
-
     <Button
-        android:id="@+id/bt_save_customer"
+        android:id="@+id/artist_bt_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update Customer"
-        android:backgroundTint="@color/update"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewCustomers"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:layout_weight="1"
-        />
+        android:text="Save Artist"
+        android:backgroundTint="@color/create"/>
 
 </LinearLayout>

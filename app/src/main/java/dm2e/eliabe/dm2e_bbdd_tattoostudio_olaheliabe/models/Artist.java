@@ -43,6 +43,9 @@ public class Artist {
 
     @Override
     public String toString() {
-        return firstName + " " + lastName;
+        return "Artist ID: " + artistID_PK + "\n" +
+                "Name: " + firstName + " " + lastName + "\n" +
+                "Email: " + email + "\n" +
+                "Phone: " + phoneNumber;
     }
 }

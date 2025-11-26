@@ -6,21 +6,22 @@
     android:gravity="center"
     android:padding="16dp">
 
-    <!--Titulo-->
     <TextView
         android:id="@+id/tv_selector_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/et_selectTable"
-        android:textSize="24sp"
+        android:textSize="35sp"
         android:textStyle="bold"
         android:layout_marginBottom="32dp"/>
-    <!--botones-->
+
     <Button
         android:id="@+id/bt_sel_customer"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Customer"
+        android:backgroundTint="@color/customer"
+        android:textSize="25sp"
         android:layout_marginBottom="16dp"/>
 
     <Button
@@ -28,6 +29,8 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Artist"
+        android:backgroundTint="@color/artist"
+        android:textSize="25sp"
         android:layout_marginBottom="16dp"/>
 
     <Button
@@ -35,12 +38,16 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Appointment"
+        android:backgroundTint="@color/appointment"
+        android:textSize="25sp"
         android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/bt_sel_tattoo"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Tattoo" />
+        android:backgroundTint="@color/tattoo"
+        android:textSize="25sp"
+        android:text="Tattoo"/>
 
 </LinearLayout>
